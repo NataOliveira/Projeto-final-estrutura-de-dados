@@ -6,7 +6,7 @@ from cadastro import cadastro
 from telaPix import tela_pix
 
 def homeapp(app, cliente):
-    # O app agora é passado como argumento para evitar importação circular
+    
     from login_sys import login
     from cadastro import cadastro
 

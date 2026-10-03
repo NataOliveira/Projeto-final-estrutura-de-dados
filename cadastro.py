@@ -99,12 +99,7 @@ def cadastro(app):
     entry_telefone.grid(row=13, column=1, padx=5, pady=5, sticky="w")
 
     def commit():
-        # Importações locais para evitar erro de definição
-        from login_sys import login
-        from cadastro import cadastro
-
-        # O app já está disponível no escopo da função cadastro(app)
-
+   
         usuario_get = entry_usuario.get().strip()
         nome_get = entry_nome.get().strip()
         senha_digitada = entry_senha.get().strip()
