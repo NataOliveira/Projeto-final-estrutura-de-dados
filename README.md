@@ -19,8 +19,8 @@ O sistema permite que um usuario se cadastre com dados pessoais e de endereco, r
   - Visualizacao de todas as informacoes cadastrais do usuario logado.
 - Sistema de Pix:
   - Interface para envio de transferencias via chave Pix.
-  - Inteligencia de Contatos: Sugere automaticamente os contatos com os quais o usuario mais interage.
-  - Registro de transferencias para alimentar o historico de frequencia.
+  - Inteligencia de Contatos: Utiliza uma estrutura de **Grafo** para modelar as interacoes entre usuarios, permitindo sugerir automaticamente os contatos com os quais o usuario mais interage (baseado no peso das arestas/frequencia de transferencias).
+  - Registro de transferencias para alimentar o historico de frequencia e atualizar o grafo.
 - Infraestrutura:
   - Persistencia de dados em PostgreSQL.
   - Tratamento de erros de conexao com o banco ("Sistema offline").
